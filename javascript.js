@@ -45,7 +45,7 @@ create a function called playRound() that accepts two parameters: computerSelect
 
 create a function called game():
     call playRound() 5 times:
-        for (i = 0, i < 5, i++) {
+        for (i = 0; i < 5; i++) {
             playround();
             i++;
         }
@@ -148,6 +148,15 @@ function playRound(computerSelection, playerSelection) {
             console.log('Draw! Scissors vs scissors!');
         }
     }
-
 }
+
+// create a function called game()
+function game() {
+    // call playRound() 5 times:
+    for (i = 0; i < 5; i++) {
+        playRound(computerPlay, playerSelection);
+        i++;
+    }
+}
+
 
