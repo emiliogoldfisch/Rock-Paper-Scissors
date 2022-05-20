@@ -49,7 +49,9 @@ create a function called game():
             playround();
             i++;
         }
-
+    EDIT: 
+        introduce a score that's shown after every round;
+        also introduce a best of 5 mode (as default?);
 */
 
 // create a function called computerPlay();
