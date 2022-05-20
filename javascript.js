@@ -107,11 +107,12 @@ function playerSelection() {
 
 // create a function called playRound() that accepts two parameters: ccomputerSelection from computerPlay() and playerSelection();
 function playRound(computerSelection, playerSelection) {
-    // call computerPlay() and assign its value to a variable with the same name;
-    computerSelection = computerPlay();
 
     // call playerSelection() and assign its value to a variable with the same name;
     playerSelection = playerSelection();
+
+    // call computerPlay() and assign its value to a variable with the same name;
+    computerSelection = computerPlay();
 
     // determine who the winner is;
     if (playerSelection == 'rock') {
@@ -149,3 +150,4 @@ function playRound(computerSelection, playerSelection) {
     }
 
 }
+
