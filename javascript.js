@@ -1,13 +1,14 @@
 /* Rock, Paper, Scissors against the Computer
 
 create a function called computerPlay();
+    create a variable called computerSelection and assign it an empty string;
     create a variable called randomNumber that holds a random integer between 0 and 2;
     if computerSelection is equal to 0
-        create and return a variable called computerSelection = 'rock';
+        computerSelection = 'rock';
     else if choice is equal to 1
-        create and return a variable called computerSelection = 'paper';
+        computerSelection = 'paper';
     else if choice is equal to 2
-        create and return a variable called computerSelection = 'scissors';
+        computerSelection = 'scissors';
 
 create a funciton called playerSelection();
     create a variable called playerChoice holding a reference to player input and prompt the player to input
@@ -53,13 +54,26 @@ create a function called game():
 
 // create a function called computerPlay();
 function computerPlay() {
+    // create a variable called computerSelection and assign it an empty string;
+    let computerSelection = '';
+
     // create a variable called randomNumber that holds a random integer between 0 and 2;
     let randomNumber = Math.floor(Math.random() * 3);
 
     // if computerSelection is equal to 0
-    // create and return a variable called computerSelection = 'rock';
+    // computerSelection = 'rock';
+    // else if choice is equal to 1
+    // computerSelection = 'paper';
+    // else if choice is equal to 2
+    // computerSelection = 'scissors';
     if (randomNumber == 0) {
-        let computerSelection = 'rock';
-        return computerSelection;
+        computerSelection = 'rock';
     }
+    else if (randomNumber == 1) {
+        computerSelection = 'paper';
+    }
+    else if (randomNumber == 2) {
+        computerSelection = 'scissors';
+    }
+    return computerSelection;
 }
