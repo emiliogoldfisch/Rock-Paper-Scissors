@@ -75,6 +75,7 @@ function computerPlay() {
     else if (randomNumber == 2) {
         computerSelection = 'scissors';
     }
+    console.log(`Computer chose ${computerSelection} `)
     return computerSelection;
 }
 
