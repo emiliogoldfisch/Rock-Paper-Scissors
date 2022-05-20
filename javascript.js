@@ -11,11 +11,11 @@ create a function called computerPlay();
         computerSelection = 'scissors';
 
 create a funciton called playerSelection();
-    create a variable called playerChoice holding a reference to player input and prompt the player to input
-    rock, paper or scissors;
+    create a variable called playerChoice holding a reference to player input and prompt the player to input rock, paper or scissors;
     the input should accept case-insensitive input;
     playerChoice should be converted to 'rock', 'paper' or 'scissors' respectively;
     return the variable;
+    EDIT: introduce a way to tell the player, that the word inputted was spelled incorrectly and prompt him to input anew;
 
 create a function called playRound() that accepts two parameters: ccomputerSelection from computerPlay() and playerSelction();
     call computerPlay();
@@ -76,4 +76,38 @@ function computerPlay() {
         computerSelection = 'scissors';
     }
     return computerSelection;
+}
+
+// create a funciton called playerSelection();
+function playerSelection() {
+    // create a variable called playerChoice holding a reference to player input and prompt the player to input rock, paper or scissors;
+    let playerChoice = prompt('Please choose \'rock\', \'paper\' or \'scissors\'. ');
+
+    // the input should accept case-insensitive input;
+    // playerChoice should be converted to 'rock', 'paper' or 'scissors' respectively;
+    playerChoice = playerChoice.toLowerCase();
+
+    // if spelled wrong, introduce a way to tell the player, that the word inputted was spelled incorrectly and prompt him to input anew;
+    // as long as the player spells incorrectly, prompt him to input correctly and only continue if input is spelled correctly;
+    let flag = true;
+    while (flag) {
+        if (playerChoice != 'rock' && playerChoice != 'paper' && playerChoice != 'scissors') {
+            playerChoice = prompt('Spelled incorrectly! Please type in \'rock\', \'paper\' or \'scissors\'.');
+            playerChoice = playerChoice.toLowerCase();
+        }
+        else {
+            flag = false;
+        }
+    }
+
+    // if (playerChoice != 'rock' || playerChoice != 'paper' || playerChoice != 'rock') {
+    //     let flag = true;
+    //     while (flag) {
+    //         playerChoice = prompt('Spelled incorrectly! Please type in \'rock\', \'paper\' or \'scissors\'.');
+    //         playerChoice = playerChoice.toLowerCase();
+    //     }
+    // }
+
+    // return the variable;
+    return playerChoice;
 }
