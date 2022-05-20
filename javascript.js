@@ -100,7 +100,7 @@ function playerSelection() {
             flag = false;
         }
     }
-
+    console.log(`You chose ${playerChoice}!`);
     // return the variable;
     return playerChoice;
 }
@@ -122,7 +122,7 @@ function playRound(computerSelection, playerSelection) {
         else if (computerSelection == 'paper') {
             console.log('You lose! Paper beats rock!');  
         }
-        else if (omputerSelection == 'scissors') {
+        else if (computerSelection == 'scissors') {
             console.log('You win! Rock beats scissors!');
         }
     }
