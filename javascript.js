@@ -17,9 +17,9 @@ create a funciton called playerSelection();
     return the variable;
     EDIT: introduce a way to tell the player, that the word inputted was spelled incorrectly and prompt him to input anew;
 
-create a function called playRound() that accepts two parameters: ccomputerSelection from computerPlay() and playerSelction();
-    call computerPlay();
-    call playerSelection();
+create a function called playRound() that accepts two parameters: computerSelection from computerPlay() and playerSelection();
+    call computerPlay() and assign its value to a variable with the same name;
+    call playerSelection() and assign its value to a variable with the same name;
     determine who the winner is;
         if playerSelection == 'rock'
             if computerSelection == 'rock'
@@ -100,14 +100,39 @@ function playerSelection() {
         }
     }
 
-    // if (playerChoice != 'rock' || playerChoice != 'paper' || playerChoice != 'rock') {
-    //     let flag = true;
-    //     while (flag) {
-    //         playerChoice = prompt('Spelled incorrectly! Please type in \'rock\', \'paper\' or \'scissors\'.');
-    //         playerChoice = playerChoice.toLowerCase();
-    //     }
-    // }
-
     // return the variable;
     return playerChoice;
+}
+
+// create a function called playRound() that accepts two parameters: ccomputerSelection from computerPlay() and playerSelection();
+function playRound(computerSelection, playerSelection) {
+    // call computerPlay() and assign its value to a variable with the same name;
+    computerSelection = computerPlay();
+
+    // call playerSelection() and assign its value to a variable with the same name;
+    playerSelection = playerSelection();
+
+    // determine who the winner is;
+    //     if playerSelection == 'rock'
+    //         if computerSelection == 'rock'
+    //             console.log('Draw! Rock vs rock!');
+    //         if computerSelection == 'paper'
+    //             console.log('You lose! Paper beats rock!');             
+    //         if computerSelection == 'scissors'
+    //             console.log('You win! Rock beats scissors!');
+    //     if playerSelection == 'paper'
+    //         if computerSelection == 'rock'
+    //             console.log('You win! Paper beats rock!');
+    //         if computerSelection == 'paper'
+    //             console.log('Draw! Paper vs paper!');             
+    //         if computerSelection == 'scissors'
+    //             console.log('You lose! Scissors beats paper!');
+    //     if playerSelection == 'scissors'
+    //         if computerSelection == 'rock'
+    //             console.log('You lose! Rock beats scissors!');
+    //         if computerSelection == 'paper'
+    //             console.log('You win! Scissors beats paper!');             
+    //         if computerSelection == 'scissors'
+    //             console.log('Draw! Scissors vs scissors!');
+
 }
