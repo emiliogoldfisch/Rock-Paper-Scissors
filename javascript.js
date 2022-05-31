@@ -113,7 +113,7 @@ function playRound(computerSelection, playerSelection) {
     // call playerSelection() and assign its value to a variable with the same name;
     playerSelection = playerSelection();
 
-    // call computerPlay() and assign its value to a variable with the same name;
+    // call computerPlay() and assign its value to a variable with the name computerSelection;
     computerSelection = computerPlay();
 
     // determine who the winner is;
